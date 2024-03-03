@@ -1,3 +1,11 @@
+name: Npm Comands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: self-hosted
+    steps:
 - name: Run markdown lint
   run: |
     npm install remark-cli remark-preset-lint-consistent
